@@ -1,5 +1,5 @@
 import random
-from data import stages, word_list
+from data import stages, word_list, logo
 
 letter = random.choice(word_list)
 print(f"Word is {letter}")  # just for Testing purpose
@@ -8,7 +8,7 @@ under_scores = ["_" for _ in range(len(letter))]
 index = []
 stage = 6
 is_on = True
-
+print(logo)
 while is_on:
     word = input("Guess a letter: ")
     if word in letter:
